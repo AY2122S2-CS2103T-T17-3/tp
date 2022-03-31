@@ -17,13 +17,13 @@ public class ListContactedInfoCommand extends Command {
     public static final String COMMAND_WORD = "logs";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD
-            + ": Lists all contacted information for a specified contact. \n"
+            + ": Lists all interaction records for a specified contact. \n\n"
             + "Parameters: "
-            + "INDEX "
+            + "INDEX (Must be a positive integer)\n\n"
             + "Example: " + COMMAND_WORD + " "
             + "3";
 
-    public static final String MESSAGE_LIST_CONTACTED_INFO_SUCCESS = "Listed all contacted information for %1$s:\n%2$s";
+    public static final String MESSAGE_LIST_CONTACTED_INFO_SUCCESS = "Listed all interaction records for %1$s:\n%2$s";
 
     private final Index index;
 

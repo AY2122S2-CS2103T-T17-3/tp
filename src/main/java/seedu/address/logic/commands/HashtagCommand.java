@@ -14,9 +14,9 @@ public class HashtagCommand extends Command {
 
     public static final String COMMAND_WORD = "#";
 
-    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Finds all contacts that is tagged to "
-            + "the specified tag (case-insensitive) and displays them as a list with index numbers.\n"
-            + "Parameters: TAG\n"
+    public static final String MESSAGE_USAGE = COMMAND_WORD + ": Finds all contacts tagged to "
+            + "the specified tag (case-insensitive) and displays them as a list with index numbers.\n\n"
+            + "Parameters: TAG\n\n"
             + "Example: " + COMMAND_WORD + "client";
 
     private final PersonWithTagPredicate predicate;

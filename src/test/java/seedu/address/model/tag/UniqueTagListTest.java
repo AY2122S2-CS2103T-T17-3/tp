@@ -136,7 +136,7 @@ public class UniqueTagListTest {
                 new Tag("test6")
         );
         uniqueTagList.addTags(tagSet);
-        String expectedString = "[test1] [test2] [test3] [test4] [test5]\n[test6]";
+        String expectedString = "[test1] [test2] [test3] [test4] [test5] [test6]";
         assertEquals(expectedString, uniqueTagList.toString());
 
         tagSet = Set.of(
@@ -146,12 +146,12 @@ public class UniqueTagListTest {
                 new Tag("test10")
         );
         uniqueTagList.addTags(tagSet);
-        expectedString = "[test1] [test10] [test2] [test3] [test4]\n[test5] [test6] [test7] [test8] [test9]";
+        expectedString = "[test1] [test10] [test2] [test3] [test4] [test5] [test6] [test7] [test8] [test9]";
         assertEquals(expectedString, uniqueTagList.toString());
 
         tagSet = Set.of(new Tag("test11"));
         uniqueTagList.addTags(tagSet);
-        expectedString = "[test1] [test10] [test11] [test2] [test3]\n[test4] [test5] [test6] [test7] [test8]\n[test9]";
+        expectedString = "[test1] [test10] [test11] [test2] [test3] [test4] [test5] [test6] [test7] [test8] [test9]";
         assertEquals(expectedString, uniqueTagList.toString());
     }
 }

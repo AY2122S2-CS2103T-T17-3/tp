@@ -100,7 +100,7 @@ public class AddContactedInfoCommandTest {
                 expectedPerson);
 
         String expectedMessage = String.format(
-                AddContactedInfoCommand.MESSAGE_ADD_CONTACTEDINFO_SUCCESS, expectedPerson);
+                AddContactedInfoCommand.MESSAGE_ADD_INTERACTION_SUCCESS, expectedPerson.getName(), contactedInfo);
 
         assertCommandSuccess(contactedCommand, model, expectedMessage, expectedModel);
     }

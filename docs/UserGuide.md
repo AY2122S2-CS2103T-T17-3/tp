@@ -259,8 +259,7 @@ Format: `log INDEX d/DATE des/description`
 * `DATE` should be in the specified date format.
 
 Example:
-* `log 3 d/2022-02-11 des/Signed contract` manually logs the following interaction with the 3rd person in the displayed contact list, `Signed contract` on `2022-02-11`. <br>
-  <img src="images/user-guide/AddContactedInfoCommand.png"/>
+* `log 23 d/2022-02-11 des/Signed contract` manually logs the following interaction with the 23rd person in the displayed contact list, `Signed contract` on `2022-02-11`.
 
 [Return to Table of Contents](#table-of-contents)
 

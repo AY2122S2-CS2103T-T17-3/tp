@@ -16,7 +16,7 @@ public class BirthdayCommand extends Command {
 
     public static final String MESSAGE_SUCCESS = "Here are the people with birthdays today.\n"
                                                     + Messages.MESSAGE_PERSONS_LISTED_OVERVIEW
-                                                    + "\nSend them a birthday message!";
+                                                    + "\n\nSend them a birthday message!";
     /**
      * Executes the command and returns the result message.
      *

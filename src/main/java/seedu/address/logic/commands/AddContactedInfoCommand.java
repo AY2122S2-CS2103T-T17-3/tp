@@ -19,17 +19,18 @@ import seedu.address.model.person.Person;
  */
 public class AddContactedInfoCommand extends Command {
 
-    public static final String MESSAGE_ADD_CONTACTEDINFO_SUCCESS = "Added Contacted Info to Person: %1$s";
-    public static final String MESSAGE_DUPLICATE_CONTACTED_INFO = "Contacted list already contains: %1$s";
+    public static final String MESSAGE_ADD_INTERACTION_SUCCESS = "Recorded interaction with %1$s"
+            + "\n\nSaved interaction as:\n%2$s";
+    public static final String MESSAGE_DUPLICATE_CONTACTED_INFO = "Interaction records already contains: %1$s";
 
-    public static final String COMMAND_WORD = "contacted";
+    public static final String COMMAND_WORD = "log";
     public static final String MESSAGE_USAGE = COMMAND_WORD
             + ": Adds the last contacted date  "
-            + "by the index number used in the last person listing. "
-            + "Existing date will be overwritten by the input.\n"
+            + "by the index number used in the displayed contact list. "
+            + "Existing date will be overwritten by the input.\n\n"
             + "Parameters: INDEX (must be a positive integer) "
             + "d/ [DATE] "
-            + "des/ [DESCRIPTION]\n"
+            + "des/ [DESCRIPTION]\n\n"
             + "Example: " + COMMAND_WORD + " 1 "
             + "d/ 2020-02-02 "
             + "des/ meetup.";
@@ -89,7 +90,8 @@ public class AddContactedInfoCommand extends Command {
         model.setPerson(personToEdit, editedPerson);
         model.updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
 
-        return new CommandResult(String.format(MESSAGE_ADD_CONTACTEDINFO_SUCCESS, editedPerson));
+        return new CommandResult(
+                String.format(MESSAGE_ADD_INTERACTION_SUCCESS, editedPerson.getName(), contactedInfo.toString()));
     }
 
     /**

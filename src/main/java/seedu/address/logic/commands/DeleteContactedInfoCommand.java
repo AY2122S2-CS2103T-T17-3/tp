@@ -30,18 +30,18 @@ public class DeleteContactedInfoCommand extends Command {
     public static final String COMMAND_WORD = "unlog";
 
     public static final String MESSAGE_USAGE = COMMAND_WORD
-            + ": Deletes a contacted information from an existing contact, \n"
-            + "as specified by the index number used in the displayed person list.\n"
-            + "The log will be deleted only if "
-            + "the contacted information list is not empty.\n"
+            + ": Deletes a specified interaction record from an existing contact, "
+            + "as specified by the index number used in the displayed contact list.\n\n"
+            + "The interaction record will be deleted only if "
+            + "there are interaction records.\n\n"
             + "Parameters: INDEX (must be a positive integer) "
-            + PREFIX_DELETE_CONTACTED_INFO + "INDEX\n"
+            + PREFIX_DELETE_CONTACTED_INFO + "INDEX (must be a positive integer)\n\n"
             + "Example: " + COMMAND_WORD + " 2 "
             + PREFIX_DELETE_CONTACTED_INFO + "1";
 
-    public static final String MESSAGE_DELETE_CONTACTED_INFO_SUCCESS = "Deleted contacted information: %1$s";
-    public static final String MESSAGE_INVALID_CONTACTED_INFO_INDEX = "The specified log entry does not exist.";
-    public static final String MESSAGE_EMPTY_CONTACTED_INFO_LIST = "Cannot delete, list is empty!";
+    public static final String MESSAGE_DELETE_CONTACTED_INFO_SUCCESS = "Deleted interaction record:\n%1$s";
+    public static final String MESSAGE_INVALID_CONTACTED_INFO_INDEX = "This interaction record does not exist.";
+    public static final String MESSAGE_EMPTY_CONTACTED_INFO_LIST = "Cannot delete, you have no interactions!";
 
     private final Index index;
     private final Index indexToDel;

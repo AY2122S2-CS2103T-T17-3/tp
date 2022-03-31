@@ -70,7 +70,7 @@ dependencies {
 }
 
 shadowJar {
-    archiveName = 'addressbook.jar'
+    archiveName = 'AIA.jar'
 }
 
 defaultTasks 'clean', 'test'

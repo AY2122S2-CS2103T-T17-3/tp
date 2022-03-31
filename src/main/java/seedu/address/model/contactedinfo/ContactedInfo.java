@@ -88,10 +88,9 @@ public class ContactedInfo implements Comparable<ContactedInfo> {
      */
     @Override
     public String toString() {
-        return description.toString()
-                + " ("
-                + recentDate.toString()
-                + ")";
+        return "[" + recentDate.toString()
+                + "] "
+                + description.toString();
     }
 
     @Override

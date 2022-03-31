@@ -155,15 +155,9 @@ public class UniqueTagList implements ReadOnlyUniqueTagList {
         StringBuilder output = new StringBuilder();
         List<Tag> tagList = getUniqueTagList();
 
-        int count = 0;
         for (Tag tag : tagList) {
             output.append(tag);
-            count++;
-            if ((count % 5) == 0) {
-                output.append("\n");
-            } else {
-                output.append(" ");
-            }
+            output.append(" ");
         }
 
         String trimmedOutputString = output.toString().trim();
