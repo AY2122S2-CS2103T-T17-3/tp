@@ -70,7 +70,7 @@ dependencies {
 }
 
 shadowJar {
-    archiveName = 'AIA.jar'
+    archiveName = 'AIAssistant.jar'
 }
 
 defaultTasks 'clean', 'test'
